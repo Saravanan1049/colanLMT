@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/CIPL1049/AppData/Local/Android/Sdk/platforms/android-32/data/res/drawable/spinner_background.xml" value="0.1" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable-v24/close_icon.xml" value="0.126" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable-v24/homemenu_imagebg.xml" value="0.126" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable-v24/ic_add_file.xml" value="0.126" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable-v24/ic_baseline_follow_the_signs_24.xml" value="0.126" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable-v24/ic_baseline_person_outline_24.xml" value="0.126" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable-v24/ic_baseline_privacy_tip_24.xml" value="0.126" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable-v24/ic_baseline_published_with_changes_24.xml" value="0.126" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable-v24/ic_baseline_roundabout_left_24.xml" value="0.126" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable-v24/ic_calendar.xml" value="0.126" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable-v24/ic_insurance.xml" value="0.126" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable-v24/ic_name.xml" value="0.126" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable/approved_background.xml" value="0.1" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable/bottom_navigation.xml" value="0.1415" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable/bottom_sheet_background.xml" value="0.1415" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable/button_background.xml" value="0.1" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable/disabled_email.xml" value="0.118" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable/ic_back.xml" value="0.126" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1215" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable/ic_my_files.xml" value="0.126" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable/ic_padlock.xml" value="0.1215" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable/ic_user.xml" value="0.1415" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable/ic_visibility__1_.xml" value="0.118" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable/password_toggle.xml" value="0.1" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable/spinner_background.xml" value="0.1045" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable/spinner_border.xml" value="0.1415" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable/status_backgrund.xml" value="0.1" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable/summary_bar_background.xml" value="0.126" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable/toolbar_background.xml" value="0.1415" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/activity_home.xml" value="0.11848341232227488" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/activity_login.xml" value="0.17" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/activity_splash_screen.xml" value="0.1921875" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/activity_summary.xml" value="0.17258883248730963" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/add_request.xml" value="0.27247579529737204" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/bottom_navigation_menu.xml" value="0.1921875" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/drawer_menu_layout.xml" value="0.22" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/drop_down_menu.xml" value="0.1921875" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/eg.xml" value="0.1921875" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/fragment_add_request.xml" value="0.25" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/fragment_bottom_sheet.xml" value="0.1921875" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/fragment_forgot_password.xml" value="0.22" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/fragment_login.xml" value="0.1593625498007968" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/fragment_my_request.xml" value="0.27247579529737204" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/fragment_password_change.xml" value="0.25" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/fragment_request_status.xml" value="0.2881118881118881" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/fragment_summary.xml" value="0.22" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/home_layout.xml" value="0.22" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/home_recyclerview_card.xml" value="0.1921875" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/leave_request.xml" value="0.18" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/list_item.xml" value="0.1921875" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/my_request_data.xml" value="0.18" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/nav_header.xml" value="0.1921875" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/radio_buttons_session.xml" value="0.1921875" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/request_status_fragment.xml" value="0.22" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/summary_recyclerview_data.xml" value="0.27864214992927866" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/test.xml" value="0.1921875" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/test3.xml" value="0.1921875" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/toolbar_layout.xml" value="1.0" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.1921875" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/menu/drawer_menu.xml" value="0.5" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

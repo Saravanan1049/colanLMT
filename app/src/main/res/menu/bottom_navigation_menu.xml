@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home_1x"
+        android:title="Home"
+        />
+    <item
+        android:id="@+id/summary"
+        android:icon="@drawable/summary_1x"
+        android:title="Summary"
+        android:enabled="true"
+        />
+    <item
+        android:id="@+id/my_request"
+        android:icon="@drawable/my_request_1x"
+        android:title="My Request"
+         />
+
+
+</menu>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="item"
+            type="com.example.colanlmt.model.MyRequestData" />
+
+    </data>
+
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="5dp"
+        app:cardElevation="5dp">
+        
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:padding="15dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/request_leave_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@{item.leaveType}"
+                android:textColor="@color/dark_blue"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/request_leaveDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="@{item.leaveDate}" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/request_reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/request_leave_type"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@{item.leaveReason}"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/request_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:status="@{item.leaveStatus}"
+                android:textSize="15sp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:layout_marginEnd="10dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

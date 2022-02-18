@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_blue">#5ea2f1</color>
+    <color name="dark_blue">#3b76bb</color>
+    <color name="transparent">#0000ffff</color>
+    <color name="approvedBg">#e7f8f5</color>
+    <color name="pendingBg">#fff7ea</color>
+    <color name="rejectedBg">#ffeef0</color>
+    <color name="approved">#16b79e</color>
+    <color name="pending">#ffad31</color>
+    <color name="rejected">#ff3a4a</color>
+    <color name="swipeBg">#E7F1FD</color>
+    <color name="red">#FF4655</color>
+    <color name="leavesummarybox">#d9f4fe</color>
+    <color name="myrequestbox">#ffecd5</color>
+    <color name="compoffbox">#fcddd2</color>
+    <color name="leavepolicybox">#def5e9</color>
+    <color name="leavesummaryicon">#3ec7fa</color>
+    <color name="myrequesticon">#fda730</color>
+    <color name="compofficon">#f3541f</color>
+    <color name="leavepolicyicon">#5acd96</color>
+    <color name="lmtblue">#5393df</color>
+
+
+</resources>

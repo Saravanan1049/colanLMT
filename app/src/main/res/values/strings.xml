@@ -1,0 +1,171 @@
+<resources>
+    <string name="app_name">Colan LMT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_screen_default">home_screen</string>
+    <string name="sign_in_title">Sign In</string>
+    <string name="sign_in_cipl_id">CIPL ID</string>
+    <string name="sign_in_password">Password</string>
+    <string name="sign_in_remember_me">Remember me</string>
+    <string name="sign_in_forgot_password">Forgot Password?</string>
+    <string name="warning_login">Important:Your Employee ID should be 8 charecters. [i.e,if your ID is 41, you must be enter like CIPL41]</string>
+    <string name="forgot_password_text">Enter your official email address to get your login information for PM tool</string>
+    <string name="forgot_email">Official Email id</string>
+    <string name="forgot_submit">Submit</string>
+    <string name="forgot_to_login">Back to Sign In</string>
+    <string name="forgot_password_title">Forgot Password</string>
+    <string name="signin_sign_in">Sign In</string>
+    <string name="image_add_request">image_add_request</string>
+
+    <string-array name="content">
+        <item>Leave</item>
+        <item>Permission</item>
+        <item>My Comp Off</item>
+    </string-array>
+    <string-array name="leave_type_list">
+
+        <item>Casual Leave</item>
+        <item>Sick Leave</item>
+        <item>Earned Leave</item>
+        <item>Loss of Pay Leave</item>
+        <item>Maternity Leave</item>
+        <item>Floating Leave</item>
+    </string-array>
+    <string-array name="leave_status_list">
+        <item>Leave Status</item>
+        <item>Approved</item>
+        <item>Pending</item>
+        <item>Rejected</item>
+    </string-array>
+    <string-array name="duration_year">
+        <item>Year</item>
+        <item>2022</item>
+        <item>2021</item>
+        <item>2020</item>
+        <item>2019</item>
+        <item>2018</item>
+        <item>2017</item>
+        <item>2016</item>
+    </string-array>
+    <string-array name="leave_request">
+        <item>Leave Request</item>
+        <item>Permission</item>
+        <item>My Comp Off</item>
+
+    </string-array>
+
+    <string-array name="duration_list">
+        <item>One day</item>
+        <item>More than one day</item>
+    </string-array>
+
+    <string-array name="date_from_entries_morning">
+        <item>08:00AM</item>
+        <item>08:30AM</item>
+        <item>09:00AM</item>
+        <item>09:30AM</item>
+        <item>10:00AM</item>
+        <item>10:30AM</item>
+        <item>11:00AM</item>
+        <item>11:30AM</item>
+    </string-array>
+
+    <string-array name="time_till_entry">
+        <item>1 Hour</item>
+        <item>2 Hour</item>
+    </string-array>
+
+
+    <string-array name="date_from_entries_afternoon">
+        <item>12:00PM</item>
+        <item>12:30PM</item>
+        <item>01:00PM</item>
+        <item>01:30PM</item>
+        <item>02:00PM</item>
+        <item>02:30PM</item>
+        <item>03:00PM</item>
+        <item>03:30PM</item>
+        <item>04:00PM</item>
+        <item>04:30PM</item>
+        <item>05:00PM</item>
+        <item>05:30PM</item>
+        <item>06:00PM</item>
+        <item>06:30PM</item>
+        <item>07:00PM</item>
+        <item>07:30PM</item>
+        <item>08:00PM</item>
+        <item>08:30PM</item>
+        <item>09:00PM</item>
+
+    </string-array>
+
+    <string-array name="time">
+        <item>06:00PM</item>
+        <item>06:30PM</item>
+        <item>07:00PM</item>
+        <item>07:30PM</item>
+        <item>08:00AM</item>
+        <item>08:30AM</item>
+        <item>09:00AM</item>
+        <item>09:30AM</item>
+        <item>10:00AM</item>
+        <item>10:30AM</item>
+        <item>11:00AM</item>
+        <item>11:30AM</item>
+        <item>12:00PM</item>
+        <item>12:30PM</item>
+        <item>01:00PM</item>
+        <item>01:30PM</item>
+        <item>02:00PM</item>
+        <item>02:30PM</item>
+        <item>03:00PM</item>
+        <item>03:30PM</item>
+        <item>04:00PM</item>
+        <item>04:30PM</item>
+        <item>05:00PM</item>
+        <item>05:30PM</item>
+        <item>06:00PM</item>
+        <item>06:30PM</item>
+        <item>07:00PM</item>
+        <item>07:30PM</item>
+        <item>08:00PM</item>
+        <item>08:30PM</item>
+        <item>09:00PM</item>
+        <item>09:30PM</item>
+        <item>10:00PM</item>
+        <item>10:30PM</item>
+        <item>11:00PM</item>
+        <item>11:30PM</item>
+    </string-array>
+
+    <string-array name="report_list">
+        <item>saravanan@colanonline.com</item>
+        <item>syedfahadhussain@colanonline.com</item>
+        <item>neeraj@colanonline.com</item>
+        <item>vinodkumar@colanonline.com</item>
+        <item>lakshminarasimhan@colanonline.com</item>
+        <item>raghunath.m@colanonline.com</item>
+        <item>rafiudeen@colanonline.com</item>
+        <item>saqibahmed@colanonline.com</item>
+    </string-array>
+
+    <string name="label_first_name">First name<font fgcolor="#D32F2F">*</font></string>
+    <string name="request_type_add">Request Type<font fgcolor="#D32F2F">*</font></string>
+    <string name="leave_type_add">Leave Type<font fgcolor="#D32F2F">*</font></string>
+    <string name="duration_add">Duration<font fgcolor="#D32F2F">*</font></string>
+    <string name="date_from_add">Date From<font fgcolor="#D32F2F">*</font></string>
+    <string name="date_till_add">Date Till<font fgcolor="#D32F2F">*</font></string>
+    <string name="reason_add">Reason<font fgcolor="#D32F2F">*</font></string>
+    <string name="contact_number_add">Contact Number<font fgcolor="#D32F2F">*</font></string>
+    <string name="working_on_comp">Working On<font fgcolor="#D32F2F">*</font></string>
+    <string name="in_time_comp">In Time<font fgcolor="#D32F2F">*</font></string>
+    <string name="out_time_comp">Out Time<font fgcolor="#D32F2F">*</font></string>
+    <string name="reporting_person_comp">Reporting Person<font fgcolor="#D32F2F">*</font></string>
+    <string name="reason_for_work_comp">Reason For Work<font fgcolor="#D32F2F">*</font></string>
+    <string name="session_permission">Session<font fgcolor="#D32F2F">*</font></string>
+    <string name="permission_date">Permission Date<font fgcolor="#D32F2F">*</font></string>
+    <string name="time_from_permission">Time From<font fgcolor="#D32F2F">*</font></string>
+    <string name="time_till_permission">Time Till<font fgcolor="#D32F2F">*</font></string>
+
+
+</resources>

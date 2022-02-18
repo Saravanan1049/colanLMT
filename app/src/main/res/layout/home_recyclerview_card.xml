@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="itemname"
+            type="java.lang.String" />
+
+        <variable
+            name="image"
+            type="android.graphics.drawable.Drawable" />
+
+        <variable
+            name="layoutbg"
+            type="int" />
+
+        <variable
+            name="imagebg"
+            type="int" />
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/homemenu_imagebg"
+        android:backgroundTint="@{layoutbg}"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/imageicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/homemenu_imagebg"
+            android:backgroundTint="@{imagebg}"
+            android:padding="25dp"
+            android:src="@{image}" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:text="@{itemname}"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</layout>

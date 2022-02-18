@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph_summary"
+    app:startDestination="@id/summaryFragment">
+
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.example.colanlmt.view.ui.home.SummaryFragment"
+        android:label="fragment_summary"
+        tools:layout="@layout/fragment_summary" >
+        <action
+            android:id="@+id/action_summaryFragment_to_myRequestFragment"
+            app:destination="@id/myRequestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myRequestFragment"
+        android:name="com.example.colanlmt.view.ui.home.MyRequestFragment"
+        android:label="fragment_my_request"
+        tools:layout="@layout/fragment_my_request" >
+        <action
+            android:id="@+id/action_myRequestFragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addRequestFragment"
+        android:name="com.example.colanlmt.AddRequestFragment"
+        android:label="fragment_add_request"
+        tools:layout="@layout/fragment_add_request" />
+</navigation>

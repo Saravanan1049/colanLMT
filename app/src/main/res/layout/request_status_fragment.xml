@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="value"
+            type="com.example.colanlmt.model.EmployeeDetailsData" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_addRequest"
+                style="?attr/actionBarSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/toolbar_background"
+                android:padding="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_back" />
+
+                <TextView
+                    android:id="@+id/summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:text="My Request"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/status_approved_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="70dp">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/left_guideLine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="15dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/right_guideLine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="15dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/top_guideLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="10dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/bottom_guideLine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_end="10dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/center_guideLine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="144dp" />
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_null"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toStartOf="@id/center_guideLine"
+                        app:layout_constraintStart_toEndOf="@id/left_guideLine"
+                        app:layout_constraintTop_toBottomOf="@id/top_guideLine">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/employeeName_null"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_5dp"
+                            android:text="Employee Name"
+                            android:textSize="@dimen/textSize_15sp"
+                            android:layout_margin="@dimen/margin_3dp"/>
+
+                        <View
+                            android:id="@+id/view1"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/swipeBg" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/employeeID_null"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_5dp"
+                            android:text="Employee ID"
+                            android:layout_margin="@dimen/margin_3dp"
+                            android:textSize="@dimen/textSize_15sp" />
+
+                        <View
+                            android:id="@+id/view2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/swipeBg" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/department_null"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_5dp"
+                            android:text="Department"
+                            android:layout_margin="@dimen/margin_3dp"
+                            android:textSize="@dimen/textSize_15sp" />
+
+                        <View
+                            android:id="@+id/view3"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/swipeBg" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/designation_null"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_5dp"
+                            android:text="Designation"
+                            android:layout_margin="@dimen/margin_3dp"
+                            android:textSize="@dimen/textSize_15sp" />
+
+                        <View
+                            android:id="@+id/view4"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/swipeBg" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/leave_type_null"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_5dp"
+                            android:text="Leave Type"
+                            android:layout_margin="@dimen/margin_3dp"
+                            android:textSize="@dimen/textSize_15sp" />
+
+                        <View
+                            android:id="@+id/view5"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/swipeBg" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/duration_null"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_5dp"
+                            android:text="Duration"
+                            android:layout_margin="@dimen/margin_3dp"
+                            android:textSize="@dimen/textSize_15sp" />
+
+                        <View
+                            android:id="@+id/view6"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/swipeBg" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/request_from_null"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_5dp"
+                            android:text="Request From"
+                            android:layout_margin="@dimen/margin_3dp"
+                            android:textSize="@dimen/textSize_15sp" />
+
+                        <View
+                            android:id="@+id/view7"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/swipeBg" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/request_to_null"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_5dp"
+                            android:text="Request To"
+                            android:layout_margin="@dimen/margin_3dp"
+                            android:textSize="@dimen/textSize_15sp" />
+
+                        <View
+                            android:id="@+id/view8"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/swipeBg" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/reason_null"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_5dp"
+                            android:text="Reason"
+                            android:layout_margin="@dimen/margin_3dp"
+                            android:textSize="@dimen/textSize_15sp" />
+
+                        <View
+                            android:id="@+id/view9"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/swipeBg" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/status_null"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:padding="@dimen/padding_5dp"
+                            android:text="Status"
+                            android:textSize="@dimen/textSize_15sp" />
+
+                        <View
+                            android:id="@+id/view10"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/swipeBg" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/updated_by_null"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_3dp"
+                            android:padding="@dimen/padding_5dp"
+                            android:text="Updated By"
+                            android:textSize="@dimen/textSize_15sp" />
+
+                        <View
+                            android:id="@+id/view11"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/swipeBg" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/approved_date_null"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_3dp"
+                            android:padding="@dimen/padding_5dp"
+                            android:text="Approved Date"
+                            android:textSize="@dimen/textSize_15sp" />
+
+                        <View
+                            android:id="@+id/view12"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/swipeBg" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/updated_on_null"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_3dp"
+                            android:padding="@dimen/padding_5dp"
+                            android:text="Updated On"
+                            android:textSize="@dimen/textSize_15sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toStartOf="@id/right_guideLine"
+                        app:layout_constraintStart_toEndOf="@id/center_guideLine"
+                        app:layout_constraintTop_toBottomOf="@id/top_guideLine">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/employee_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:padding="@dimen/padding_5dp"
+                            android:text="@{value.employeeName}"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize_15sp"
+                            android:layout_margin="@dimen/margin_3dp"/>
+
+                        <View
+                            android:id="@+id/view_data1"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/swipeBg" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/employee_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_3dp"
+                            android:padding="@dimen/padding_5dp"
+                            android:gravity="center_horizontal"
+                            android:text="@{value.employeeID}"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize_15sp" />
+
+                        <View
+                            android:id="@+id/view_data2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/swipeBg" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/department"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_3dp"
+                            android:padding="@dimen/padding_5dp"
+                            android:gravity="center_horizontal"
+                            android:text="@{value.department}"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize_15sp" />
+
+                        <View
+                            android:id="@+id/view_data3"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/swipeBg" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/designation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_3dp"
+                            android:gravity="start"
+                            android:padding="@dimen/padding_5dp"
+                            android:text="@{value.designation}"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize_15sp" />
+
+                        <View
+                            android:id="@+id/view_data4"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/swipeBg" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/leave_type_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:padding="@dimen/padding_5dp"
+                            android:text="@{value.leaveType}"
+                            android:textColor="@color/black"
+                            android:layout_margin="@dimen/margin_3dp"
+                            android:textSize="@dimen/textSize_15sp" />
+
+                        <View
+                            android:id="@+id/view_data5"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/swipeBg" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/duration_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:padding="@dimen/padding_5dp"
+                            android:text="@{value.duration}"
+                            android:textColor="@color/black"
+                            android:layout_margin="@dimen/margin_3dp"
+                            android:textSize="@dimen/textSize_15sp" />
+
+                        <View
+                            android:id="@+id/view_data6"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/swipeBg" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/request_from_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:padding="@dimen/padding_5dp"
+                            android:text="@{value.requestFrom}"
+                            android:textColor="@color/black"
+                            android:layout_margin="@dimen/margin_3dp"
+                            android:textSize="@dimen/textSize_15sp" />
+
+                        <View
+                            android:id="@+id/view_data7"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/swipeBg" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/request_to_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:padding="@dimen/padding_5dp"
+                            android:text="@{value.requestTo}"
+                            android:textColor="@color/black"
+                            android:layout_margin="@dimen/margin_3dp"
+                            android:textSize="@dimen/textSize_15sp" />
+
+                        <View
+                            android:id="@+id/view_data8"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/swipeBg" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/reason"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:padding="@dimen/padding_5dp"
+                            android:text="@{value.reason}"
+                            android:layout_margin="@dimen/margin_3dp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize_15sp" />
+
+                        <View
+                            android:id="@+id/view_data9"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/swipeBg" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="28dp"
+                            android:layout_margin="@dimen/margin_3dp"
+                            android:gravity="center_horizontal"
+                            android:padding="@dimen/padding_5dp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize_15sp"
+                            app:status="@{value.status}" />
+
+                        <View
+                            android:id="@+id/view_data10"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/swipeBg" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/updated_by"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_3dp"
+                            android:padding="@dimen/padding_5dp"
+                            android:text="@{value.updatedBy}"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize_15sp" />
+
+                        <View
+                            android:id="@+id/view_data11"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/swipeBg" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/approved_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_3dp"
+                            android:gravity="center_horizontal"
+                            android:padding="@dimen/padding_5dp"
+                            android:text="@{value.approvedDate}"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize_15sp" />
+
+                        <View
+                            android:id="@+id/view_data12"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/swipeBg" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/updated_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_3dp"
+                            android:gravity="center_horizontal"
+                            android:padding="@dimen/padding_5dp"
+                            android:text="@{value.updatedOn}"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize_15sp" />
+
+
+                    </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_reset_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layout_null"
+                app:layout_constraintStart_toEndOf="@id/left_guideLine"
+                app:layout_constraintEnd_toStartOf="@id/btn_edit_edit"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:text="Cancel"
+                android:textColor="@color/red"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/white"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_edit_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layout_null"
+                app:layout_constraintStart_toEndOf="@id/btn_reset_edit"
+                app:layout_constraintEnd_toStartOf="@id/right_guideLine"
+                android:layout_marginTop="20dp"
+                android:text="Edit"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                />
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
