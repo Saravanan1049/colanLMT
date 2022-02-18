@@ -144,7 +144,7 @@
             app:layout_constraintBottom_toTopOf="@id/bottom_guideLine"
             app:layout_constraintHorizontal_chainStyle="spread"
             app:itemname="@{`My Comp Off`}"
-            app:image="@{@drawable/ic_calendar}"
+            app:image="@{@drawable/ic_calendar_white}"
             app:layoutbg="@{@color/compoffbox}"
             app:imagebg="@{@color/compofficon}"
 

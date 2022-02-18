@@ -60,7 +60,6 @@ class AddRequestFragment : Fragment() {
                     binding.contactNo.visibility=View.VISIBLE
                     binding.countryCodeLayout.visibility=View.VISIBLE
 
-                    binding.compOffLayout.visibility=View.GONE
                     binding.permissionLayout.visibility=View.GONE
 
 
@@ -77,21 +76,22 @@ class AddRequestFragment : Fragment() {
                     binding.contactNo.visibility=View.VISIBLE
                     binding.countryCodeLayout.visibility=View.VISIBLE
 
-                    binding.compOffLayout.visibility=View.GONE
+
                     binding.permissionLayout.visibility=View.VISIBLE
                 }
                 2 -> {
                     Toast.makeText(context, "Clicked $position Work from Home", Toast.LENGTH_LONG)
                         .show()
 
-                    binding.leaveRequest.visibility=View.GONE
+                    binding.leaveRequest.visibility=View.VISIBLE
 
-                    binding.txtReasonText.visibility=View.GONE
-                    binding.textReasonLayout.visibility=View.GONE
-                    binding.contactNo.visibility=View.GONE
-                    binding.countryCodeLayout.visibility=View.GONE
+                    binding.txtReasonText.visibility=View.VISIBLE
+                    binding.textReasonLayout.visibility=View.VISIBLE
+                    binding.contactNo.visibility=View.VISIBLE
+                    binding.countryCodeLayout.visibility=View.VISIBLE
 
-                    binding.compOffLayout.visibility=View.VISIBLE
+                    binding.leaveTypeLayout.visibility=View.GONE
+                    binding.leaveTypeText.visibility=View.GONE
                     binding.permissionLayout.visibility=View.GONE
 
                 }
@@ -229,30 +229,30 @@ class AddRequestFragment : Fragment() {
 
 //        binding.totalTimeText.text=binding.timeFromText+1
 
-        binding.workingOnLayout.setOnClickListener {
-            val datePickerFrom = DatePickerDialog(
-                requireContext(),
-                DatePickerDialog.OnDateSetListener { datePicker, dYear, dMonth, dDate ->
-                    binding.workingOnText.text = "$dDate/${dMonth + 1}/$dYear"
-                },
-                year,
-                month,
-                day
-            )
-            datePickerFrom.show()
-        }
-
-        val inTime = resources.getStringArray(R.array.time)
-        val adapterInTime = ArrayAdapter(requireContext(), R.layout.drop_down_menu, inTime)
-        binding.inTimeText.setAdapter(adapterInTime)
-
-        val outTime = resources.getStringArray(R.array.time)
-        val adapterOutTime = ArrayAdapter(requireContext(), R.layout.drop_down_menu, outTime)
-        binding.outTimeText.setAdapter(adapterOutTime)
-
-        val reportList = resources.getStringArray(R.array.report_list)
-        val adapterReportList = ArrayAdapter(requireContext(), R.layout.drop_down_menu, reportList)
-        binding.reportingPersonText.setAdapter(adapterReportList)
+//        binding.workingOnLayout.setOnClickListener {
+//            val datePickerFrom = DatePickerDialog(
+//                requireContext(),
+//                DatePickerDialog.OnDateSetListener { datePicker, dYear, dMonth, dDate ->
+//                    binding.workingOnText.text = "$dDate/${dMonth + 1}/$dYear"
+//                },
+//                year,
+//                month,
+//                day
+//            )
+//            datePickerFrom.show()
+//        }
+//
+//        val inTime = resources.getStringArray(R.array.time)
+//        val adapterInTime = ArrayAdapter(requireContext(), R.layout.drop_down_menu, inTime)
+//        binding.inTimeText.setAdapter(adapterInTime)
+//
+//        val outTime = resources.getStringArray(R.array.time)
+//        val adapterOutTime = ArrayAdapter(requireContext(), R.layout.drop_down_menu, outTime)
+//        binding.outTimeText.setAdapter(adapterOutTime)
+//
+//        val reportList = resources.getStringArray(R.array.report_list)
+//        val adapterReportList = ArrayAdapter(requireContext(), R.layout.drop_down_menu, reportList)
+//        binding.reportingPersonText.setAdapter(adapterReportList)
 
 
 

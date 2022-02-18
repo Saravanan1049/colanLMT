@@ -21,6 +21,8 @@
         <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable/button_background.xml" value="0.1" />
         <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable/disabled_email.xml" value="0.118" />
         <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable/ic_back.xml" value="0.126" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable/ic_calendar.xml" value="0.117" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable/ic_calendar_white.xml" value="0.117" />
         <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1215" />
         <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable/ic_my_files.xml" value="0.126" />
         <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/drawable/ic_padlock.xml" value="0.1215" />
@@ -36,8 +38,9 @@
         <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/activity_login.xml" value="0.17" />
         <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/activity_splash_screen.xml" value="0.1921875" />
         <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/activity_summary.xml" value="0.17258883248730963" />
-        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/add_request.xml" value="0.27247579529737204" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/add_request.xml" value="0.67" />
         <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/bottom_navigation_menu.xml" value="0.1921875" />
+        <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/comp_off_layout.xml" value="0.17481884057971014" />
         <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/drawer_menu_layout.xml" value="0.22" />
         <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/drop_down_menu.xml" value="0.1921875" />
         <entry key="..\:/Users/CIPL1049/Colan Projects/ColanLMT/app/src/main/res/layout/eg.xml" value="0.1921875" />

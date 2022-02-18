@@ -8,32 +8,37 @@ import androidx.databinding.DataBindingUtil
 import com.example.colanlmt.R
 import com.example.colanlmt.databinding.HomeLayoutBinding
 import com.example.colanlmt.model.DrawerMenu
+import java.util.*
+
+
 
 class HomeActivity : AppCompatActivity() {
-    lateinit var binding:HomeLayoutBinding
+    lateinit var binding: HomeLayoutBinding
     val menudataList = ArrayList<DrawerMenu>()
-        lateinit var slidingRootNav:Sliding
+
+lateinit var slidingRootNav : SlidingRootNav
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding=DataBindingUtil.setContentView(this,R.layout.home_layout)
+        binding = DataBindingUtil.setContentView(this, R.layout.home_layout)
 
-//    window.setFlags(windowManager.)
-        window.statusBarColor = ResourcesCompat.getColor(resources,R.color.lmtblue,null)
+        window.statusBarColor = ResourcesCompat.getColor(resources, R.color.lmtblue, null)
         binding.toolBarHome.title = "Home"
-        actionBar?.title  =""
+        actionBar?.title = ""
 
-        slidingRootNav = SlidingRootNavBuilder(this)
-            .withToolbarMenuToggle(binding.toolBarHome)
-            .withMenuOpened(false)
-            .withContentClickableWhenMenuOpened(true)
-            .withSavedState(savedInstanceState)
-            .withMenuLayout(R.layout.drawer_menu_layout)
-            .inject()
-        binding.toolBarHome.navigationIcon = ResourcesCompat.getDrawable(getResources(), R.drawable.ic_menu, null)
-        val closeicon = findViewById<ImageView>(R.id.closeIcon)
-        closeicon.setOnClickListener {
+//        slidingRootNav = SlidingRootNavBuilder(this)
+//            .withToolbarMenuToggle(binding.toolBarHome)
+//            .withMenuOpened(false)
+//            .withContentClickableWhenMenuOpened(true)
+//            .withSavedState(savedInstanceState)
+//            .withMenuLayout(R.layout.drawer_menu_layout)
+//            .inject()
+        binding.toolBarHome.navigationIcon =
+            ResourcesCompat.getDrawable(getResources(), R.drawable.ic_menu, null)
+//        val closeicon = findViewById<ImageView>(R.id.closeIcon)
+//        closeicon.setOnClickListener {
 //            slidingRootNav.closeMenu()
-        }
+    }
+}
 
 
 
@@ -81,5 +86,4 @@ class HomeActivity : AppCompatActivity() {
 //                .addToBackStack(null)
 //                .commit()
 //        }
-    }
-}
+

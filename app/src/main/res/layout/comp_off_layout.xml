@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/comp_off_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <TextView
+            android:id="@+id/working_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/working_on_comp" />
+
+        <RelativeLayout
+            android:id="@+id/working_on_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/spinner_background"
+            android:padding="2dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/working_on_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:ignore="RelativeOverlap" />
+
+            <ImageView
+                android:id="@+id/image_working_on"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/spinner_background"
+                android:src="@drawable/ic_calendar_white" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/in_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/in_time_comp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/in_time_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/spinner_background">
+
+            <AutoCompleteTextView
+                android:id="@+id/in_time_text"
+                style="@style/Autocomplete"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/spinner_background"
+                android:focusable="false"
+                android:inputType="textNoSuggestions"
+                android:paddingBottom="15dp"
+                android:text="From Time"
+                tools:ignore="LabelFor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/out_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/out_time_comp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/out_time_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/spinner_background">
+
+            <AutoCompleteTextView
+                android:id="@+id/out_time_text"
+                style="@style/Autocomplete"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/spinner_background"
+                android:focusable="false"
+                android:inputType="textNoSuggestions"
+                android:paddingBottom="15dp"
+                android:text="From Time"
+                tools:ignore="LabelFor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/reporting_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/reporting_person_comp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reporting_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:background="@drawable/spinner_background">
+
+            <AutoCompleteTextView
+                android:id="@+id/reporting_person_text"
+                style="@style/Autocomplete"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/spinner_background"
+                android:focusable="false"
+                android:inputType="textNoSuggestions"
+                android:paddingBottom="15dp"
+                android:text="Report to"
+                tools:ignore="LabelFor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/reason_for_work"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/reason_for_work_comp"
+
+
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reason_work_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reason_work_text"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/spinner_background"
+                android:gravity="top|start"
+                android:inputType="textAutoCorrect"
+                android:maxLines="5"
+                android:minLines="1"
+                android:padding="20dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
