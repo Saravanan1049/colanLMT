@@ -5,4 +5,5 @@
     <dimen name="textSize_20sp">20sp</dimen>
     <dimen name="textSize_15sp">15sp</dimen>
     <dimen name="margin_3dp">3dp</dimen>
+    <dimen name="padding_start_15dp">15dp</dimen>
 </resources>

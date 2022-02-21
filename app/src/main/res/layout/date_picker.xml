@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="datelabel"
+            type="String" />
+
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/itemlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{datelabel}"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/datepickertext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/itemlabel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/spinner_background"
+        app:drawableEndCompat="@drawable/ic_calendar_white"
+        app:drawableTint="@color/light_blue"
+        android:layout_marginTop="7dp"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="15dp"
+        android:paddingStart="@dimen/padding_start_15dp"
+        android:paddingEnd="@dimen/padding_start_15dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

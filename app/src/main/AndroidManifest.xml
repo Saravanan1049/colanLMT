@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ColanLMT">
         <activity
+            android:name=".view.ui.home.MenuItemsActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.ui.home.SummaryActivity"
             android:exported="false" />
         <activity

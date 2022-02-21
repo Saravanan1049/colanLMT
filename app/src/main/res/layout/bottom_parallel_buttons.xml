@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="button1Name"
+            type="String" />
+        <variable
+            name="button2Name"
+            type="String" />
+
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="35dp"
+   >
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/button1"
+    android:layout_width="0dp"
+    android:layout_height="45dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toStartOf="@id/button2"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="10dp"
+    android:textSize="17sp"
+    android:textAllCaps="false"
+    android:text="@{button1Name}"
+    app:backgroundTint="@null"
+    android:background="@drawable/reset_button_bg"
+    android:textColor="@color/lmtblue"
+    />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        app:backgroundTint="@null"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white"
+        android:text="@{button2Name}"
+        android:clickable="true"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

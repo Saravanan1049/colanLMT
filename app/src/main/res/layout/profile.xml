@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.example.colanlmt.viewmodel.ProfileViewModel" />
+
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <include
+            android:id="@+id/profileToolbar"
+            layout="@layout/toolbar_layout" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="60dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="30dp">
+
+                <androidx.constraintlayout.utils.widget.ImageFilterView
+                    android:id="@+id/profileImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/icon_grey"
+                    android:src="@mipmap/profile_image"
+                    app:round="80dp"
+                    android:layout_marginTop="20dp"/>
+
+                <include
+                    android:id="@+id/personalEmail"
+                    layout="@layout/profile_textview"
+                    app:itemlabel="@{@string/personal_email}" />
+
+                <include
+                    android:id="@+id/mobileNumber"
+                    layout="@layout/countrycode_number"
+                    app:ccnlabel="@{@string/mobile_number}" />
+
+                <include
+                    android:id="@+id/emergencyNumber"
+                    layout="@layout/countrycode_number"
+                    app:ccnlabel="@{@string/emergency_number}" />
+
+                <include
+                    android:id="@+id/landlineNumber"
+                    layout="@layout/countrycode_number"
+                    app:ccnlabel="@{@string/landline_number}" />
+
+                <include
+                    android:id="@+id/dateofBirth"
+                    layout="@layout/date_picker"
+                    app:datelabel="@{@string/dob}" />
+
+                <include
+                    android:id="@+id/sdobcheckbox"
+                    layout="@layout/checkbox_with_label"
+                    app:checkboxName="@{@string/sdob}"
+                    app:checkboxlabel="@{@string/cdob}"
+
+                    />
+
+                <include
+                    android:id="@+id/sdateofBirth"
+                    layout="@layout/date_picker" />
+
+                <include
+                    android:id="@+id/bloodGroup"
+                    layout="@layout/dropdown_autofill"
+                    app:dropdownlabel="@{@string/blood_group}" />
+
+                <include
+                    android:id="@+id/physicallyChallenged"
+                    layout="@layout/two_checkbox"
+                    app:checkboxTitle="@{@string/physicaly_challenged}" />
+
+                <include
+                    android:id="@+id/disability"
+                    layout="@layout/profile_textview"
+                    android:visibility="@{viewModel.disability ? View.VISIBLE : View.GONE  }"
+                    app:itemlabel="@{@string/disability_parts}" />
+
+                <include
+                    android:id="@+id/anySurgery"
+                    layout="@layout/profile_textview"
+                    app:itemlabel="@{@string/any_surgery}" />
+
+                <include
+                    android:id="@+id/fartherName"
+                    layout="@layout/profile_textview"
+                    app:itemlabel="@{@string/father_name}" />
+
+                <include
+                    android:id="@+id/fatheOccupation"
+                    layout="@layout/dropdown_autofill"
+                    app:dropdownlabel="@{@string/father_occupation}" />
+
+                <include
+                    android:id="@+id/martialStatus"
+                    layout="@layout/two_checkbox"
+                    app:checkboxTitle="@{@string/martial_status}"
+
+                    />
+
+                <include
+                    android:id="@+id/spouseName"
+                    layout="@layout/profile_textview"
+                    android:visibility="@{viewModel.martialStatus ? View.VISIBLE : View.GONE}"
+                    app:itemlabel="@{@string/spouse_name}" />
+
+                <include
+                    android:id="@+id/spouseContact"
+                    layout="@layout/countrycode_number"
+                    android:visibility="@{viewModel.martialStatus ? View.VISIBLE : View.GONE}"
+                    app:ccnlabel="@{@string/spouse_contact}" />
+
+                <include
+                    android:id="@+id/spouseDob"
+                    layout="@layout/date_picker"
+                    android:visibility="@{viewModel.martialStatus ? View.VISIBLE : View.GONE}"
+                    app:datelabel="@{@string/spouse_dob}" />
+
+                <include
+                    android:id="@+id/haveChildren"
+                    layout="@layout/two_checkbox"
+                    android:visibility="@{viewModel.martialStatus ? View.VISIBLE : View.GONE}"
+                    app:checkboxTitle="@{@string/have_child}" />
+
+                <include
+                    android:id="@+id/childNaeme"
+                    layout="@layout/profile_textview"
+                    android:visibility="@{viewModel.haveChild ? View.VISIBLE : View.GONE}"
+                    app:itemlabel="@{@string/child_name}" />
+
+                <include
+                    android:id="@+id/childDob"
+                    layout="@layout/date_picker"
+                    android:visibility="@{viewModel.haveChild ? View.VISIBLE : View.GONE}"
+                    app:datelabel="@{@string/child_dob}" />
+
+                <include
+                    android:id="@+id/pAddress"
+                    layout="@layout/profile_textview"
+                    app:itemlabel="@{@string/permanent_address}" />
+
+                <include
+                    android:id="@+id/addresscheckbox"
+                    layout="@layout/checkbox_with_label"
+                    app:checkboxName="@{@string/same_as_above}"
+                    app:checkboxlabel="@{@string/residential_address}" />
+
+                <include
+                    android:id="@+id/rAddress"
+                    layout="@layout/profile_textview" />
+
+                <include
+                    android:id="@+id/drivingLcience"
+                    layout="@layout/profile_textview"
+                    app:itemlabel="@{@string/driving_license}" />
+
+                <include
+                    android:id="@+id/adhaarCard"
+                    layout="@layout/profile_textview"
+                    app:itemlabel="@{@string/adhaarcard}" />
+
+                <include
+                    android:id="@+id/panId"
+                    layout="@layout/profile_textview"
+                    app:itemlabel="@{@string/pan_id}" />
+
+                <include
+                    android:id="@+id/passportCheck"
+                    layout="@layout/two_checkbox"
+                    app:checkboxTitle="@{@string/passport}"
+
+                    />
+
+                <include
+                    android:id="@+id/passportNo"
+                    layout="@layout/profile_textview"
+                    android:visibility="@{viewModel.passport ? View.VISIBLE : View.GONE}"
+                    app:itemlabel="@{@string/passport_no}" />
+
+                <include
+                    android:id="@+id/passportDateIssued"
+                    layout="@layout/date_picker"
+                    android:visibility="@{viewModel.passport ? View.VISIBLE : View.GONE}"
+                    app:datelabel="@{@string/date_issued}" />
+
+                <include
+                    android:id="@+id/passportDateExpiryl"
+                    layout="@layout/date_picker"
+                    android:visibility="@{viewModel.passport ? View.VISIBLE : View.GONE}"
+                    app:datelabel="@{@string/date_expiry}" />
+
+                <include
+                    android:id="@+id/holdingAnyVisa"
+                    layout="@layout/two_checkbox"
+                    android:visibility="@{viewModel.passport ? View.VISIBLE : View.GONE}"
+                    app:checkboxTitle="@{@string/visa_any}" />
+
+                <include
+                    android:id="@+id/visaType"
+                    layout="@layout/dropdown_autofill"
+                    android:visibility="@{viewModel.visa ? View.VISIBLE : View.GONE}"
+                    app:dropdownlabel="@{@string/visa_type}" />
+
+                <include
+                    android:id="@+id/visaValidTill"
+                    layout="@layout/date_picker"
+                    android:visibility="@{viewModel.visa ? View.VISIBLE : View.GONE}"
+                    app:datelabel="@{@string/visa_till}" />
+
+                <include
+                    android:id="@+id/resetUpdateBtns"
+                    layout="@layout/bottom_parallel_buttons"
+                    app:button1Name="@{`Reset`}"
+                    app:button2Name="@{`Update`}" />
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

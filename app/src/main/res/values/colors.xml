@@ -27,6 +27,7 @@
     <color name="compofficon">#f3541f</color>
     <color name="leavepolicyicon">#5acd96</color>
     <color name="lmtblue">#5393df</color>
-
+    <color name="icon_grey">#8d9093</color>
+    <color name="edittextcolor">#F1F4F9</color>
 
 </resources>

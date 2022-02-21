@@ -167,5 +167,41 @@
     <string name="time_from_permission">Time From<font fgcolor="#D32F2F">*</font></string>
     <string name="time_till_permission">Time Till<font fgcolor="#D32F2F">*</font></string>
 
+    <!--  -->
+    <string name="personal_email">Personal Email <font fgcolor="#D32F2F">*</font></string>
+    <string name="mobile_number">Mobile Number<font fgcolor="#D32F2F">*</font></string>
+    <string name="emergency_number">Emergency Number<font fgcolor="#D32F2F">*</font></string>
+    <string name="landline_number">Landline Number</string>
+    <string name="dob">Date of Birth<font fgcolor="#D32F2F">*</font></string>
+    <string name="cdob">Certificate Date of Birth<font fgcolor="#D32F2F">*</font></string>
+    <string name="sdob">Same as Date of Birth</string>
+    <string name="blood_group">Blood Group<font fgcolor="#D32F2F">*</font></string>
+    <string name="physicaly_challenged">Physically Challenged<font fgcolor="#D32F2F">*</font></string>
+    <string name="disability_parts">Disability Parts<font fgcolor="#D32F2F">*</font></string>
+    <string name="any_surgery">Any Surgery</string>
+    <string name="father_name">Father\' s Name<font fgcolor="#D32F2F">*</font></string>
+    <string name="father_occupation">Father\' s Occupation</string>
+    <string name="martial_status">Martial Status<font fgcolor="#D32F2F">*</font></string>
+    <string name="spouse_name">Spouse Name<font fgcolor="#D32F2F">*</font></string>
+    <string name="spouse_contact">Spouse Contact<font fgcolor="#D32F2F">*</font></string>
+    <string name="spouse_dob">Spouse Date of Birth<font fgcolor="#D32F2F">*</font></string>
+    <string name="have_child">Have Child<font fgcolor="#D32F2F">*</font></string>
+    <string name="child_name">Child Name<font fgcolor="#D32F2F">*</font></string>
+    <string name="child_dob">Child Date of Birth<font fgcolor="#D32F2F">*</font></string>
+    <string name="permanent_address">Permanent Address</string>
+    <string name="residential_address">Residential Address<font fgcolor="#D32F2F">*</font></string>
+    <string name="same_as_above">Same as Above<font fgcolor="#D32F2F">*</font></string>
+    <string name="driving_license">Driving License</string>
+    <string name="adhaarcard">Adhaar Card<font fgcolor="#D32F2F">*</font></string>
+    <string name="pan_id">Pan id<font fgcolor="#D32F2F">*</font></string>
+    <string name="passport">Passport<font fgcolor="#D32F2F">*</font></string>
+    <string name="passport_no">Passport No<font fgcolor="#D32F2F">*</font></string>
+    <string name="date_issued">Date of Issue<font fgcolor="#D32F2F">*</font></string>
+    <string name="date_expiry">Date of Expiry<font fgcolor="#D32F2F">*</font></string>
+    <string name="visa_any">Holding Any Visa<font fgcolor="#D32F2F">*</font></string>
+    <string name="visa_type">Visa Type<font fgcolor="#D32F2F">*</font></string>
+    <string name="visa_till">Vill Till<font fgcolor="#D32F2F">*</font></string>
+<!-- -->
+
 
 </resources>
